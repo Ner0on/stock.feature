@@ -35,6 +35,9 @@ group :production do
 	gem 'pg', '~> 0.17.1'
 end
 
+platforms :ruby do #linux
+	gem 'unicorn'
+end
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
