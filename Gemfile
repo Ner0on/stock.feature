@@ -30,9 +30,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use unicorn as the app server
 # gem 'unicorn'
 
+group :development, :test do 
+	gem 'sqlite3-ruby'
+end
+
 group :production do 
 	gem 'rails_12factor'
-	gem 'pg', '~> 0.17.1'
+	gem 'pg'
 end
 
 platforms :ruby do #linux
