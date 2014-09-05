@@ -38,6 +38,10 @@ group :production do
 	gem 'pg', '~> 0.17.1'
 end
 
+group :test do 
+	  gem 'cucumber-rails', :require => false
+end
+
 platforms :ruby do #linux
 	gem 'unicorn'
 end
