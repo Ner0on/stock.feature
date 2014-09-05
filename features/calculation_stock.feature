@@ -3,3 +3,4 @@ Feature: Calculate stock productivity
 		Given: The web applications runs on Heroku
 		When: I open the application url
 		Then: I must see the front page with application title "Stock productivity calculator"
+		When: I press button "Enter new stock"

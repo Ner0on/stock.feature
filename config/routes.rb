@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
+
 root 'stock#index'
+
+get 'new_stock' => 'new_stock#new'
+post 'new_stock' => 'new_stock#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
