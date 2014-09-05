@@ -42,6 +42,8 @@ platforms :ruby do #linux
 	gem 'unicorn'
 end
 
+gem "twitter-bootstrap-rails"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
