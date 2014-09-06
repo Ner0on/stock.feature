@@ -12,3 +12,9 @@ Feature: Calculate stock productivity
 		| Years      | 10          | required integer | 
 		And: I press button "Calculate"
 		Then: I must see the page with title "Calculation result"
+		And: I must see the original input data:
+	    | Stock name | Company XYZ | 
+	    | Price      | 2.00        |
+	    | Quantity   | 200         |
+	    | Percentage | 3.00        |
+	    | Years      | 10          |

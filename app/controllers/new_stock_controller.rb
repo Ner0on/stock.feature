@@ -1,14 +1,14 @@
 class NewStockController < ApplicationController
+
 	def new
 		@stock = Stock.new
 	end
 
 	def create
 		@stock = Stock.new
-		result = Stock.create(stock_params)
-		result.save
+		@result = Stock.create(stock_params)
 
-		render 'index'
+		render :action => 'index', :params => @result
 	end
 
 	private

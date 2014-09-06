@@ -2,4 +2,40 @@
 <div class="container">
 	<h3>Calculation result</h3>
 	<hr>
+	<div class="col-md-5">
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Stock name</th>
+					<th>Price</th>
+					<th>Quantity</th>
+					<th>Percentage</th>
+					<th>Years</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><%= @result.stock_name %></td>
+					<td><%= @result.price %></td>
+					<td><%= @result.quantity %></td>
+					<td><%= @result.percentage %></td>
+					<td><%= @result.years %></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th>Year</th>
+				<th>Growth</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
 </div>
