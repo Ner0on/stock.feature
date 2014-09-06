@@ -29,6 +29,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use unicorn as the app server
 # gem 'unicorn'
 
+gem 'twitter-bootstrap-rails'
+
 group :development do 
 	gem 'sqlite3'
 end
@@ -47,7 +49,6 @@ platforms :ruby do #linux
 	gem 'unicorn'
 end
 
-gem "twitter-bootstrap-rails", '~> 3.2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

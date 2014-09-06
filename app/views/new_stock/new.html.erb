@@ -1,8 +1,26 @@
 <%= content_for(:title, "Enter stock details") %>
+
 <div class="container">
-	<%= form_for @stock, url:{:action => 'create'}, html:{class: "details_form"} do |f| %>
-		
-	<% end %>
-
-
+	<h3>Enter Stock Details</h3>
+	<hr>
+	<div class="col-md-3">
+		<%= form_for @stock, url:{:action => 'create'}, html:{class: "details_form"} do |f| %>
+			<div class="form-group">
+				<%= f.text_field :stock_name, placeholder:'Company name',class: 'form-control', style:''%>
+			</div>
+			<div class="form-group">
+				<%= f.text_field :price, placeholder:'Price',class: 'form-control', style:''%>
+			</div>
+			<div class="form-group"> 
+				<%= f.text_field :quantity, placeholder:'Quantity',class: 'form-control', style:''%> 
+			</div>
+			<div class="form-group">
+				<%= f.text_field :percentage, placeholder:'Percentage',class: 'form-control', style:''%> 
+			</div>
+			<div class="form-group">	
+				<%= f.text_field :years, placeholder:'Years',class: 'form-control', style:''%>
+			</div>
+			<%= f.submit class:'btn btn-success',style:'',value: 'Calculate' %>
+		<% end %>
+	</div>
 </div>
