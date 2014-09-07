@@ -18,3 +18,17 @@ Feature: Calculate stock productivity
 	    | Quantity   | 200         |
 	    | Percentage | 3.00        |
 	    | Years      | 10          |
+	    And: list of stock values for each year:
+	    | 0  | 400.00 |
+	    | 1  | 412.00 |
+	    | 2  | 424.36 |
+	    | 3  | 437.09 |
+	    | 4  | 450.20 |
+	    | 5  | 463.71 |
+	    | 6  | 477.62 |
+	    | 7  | 491.95 |
+	    | 8  | 506.71 |
+	    | 9  | 521.91 |
+	    | 10 | 537.57 |
+	    And: the stock growth is shown as a visual graph
+  		And: the stock data must be saved into the database for later review
