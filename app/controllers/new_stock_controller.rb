@@ -10,7 +10,7 @@ include ActionView::Helpers::NumberHelper
 		@result = Stock.create(stock_params)
 
 		stock_name = stock_params[:stock_name]
-		price = stock_params[:price].to_i
+		price = stock_params[:price].to_f
 		quantity = stock_params[:quantity].to_i
 		percentage = stock_params[:percentage].to_f
 		years = stock_params[:years].to_i
@@ -24,7 +24,7 @@ include ActionView::Helpers::NumberHelper
 
 	def calculating_growth(stock_name,price,quantity,percentage,years)
 		data = []
-		
+
 		years += 1 
 		period = 0
 		growth = 0

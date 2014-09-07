@@ -2,5 +2,31 @@
 <div class="container">
 	<h3>Enter New Stock</h3>
 	<hr>
-	<a href="/new_stock" class="btn btn-primary">Enter new stock</a>
+	<div class="col-md-3" style="margin-left:200px;">
+		<a href="/new_stock" class="btn btn-lg btn-primary ">Enter new stock</a>
+	</div>
+	<div class="col-md-5" style="margin-right:40px;">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<td><b>Name<b></td>
+					<td><b>Price<b></td>
+					<td><b>Quantity<b></td>
+					<td><b>Percentage<b></td>
+					<td><b>Years<b></td>
+				</tr>
+			</thead>
+			<tbody>
+				<% @stocks.each do |s|%>
+					<tr>
+						<td><%= s.stock_name %></td>
+						<td><%= s.price %></td>
+						<td><%= s.quantity %></td>
+						<td><%= s.percentage %></td>
+						<td><%= s.years %></td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
 </div>
