@@ -17,14 +17,15 @@
 				</tr>
 			</thead>
 			<tbody>
+				
 				<% @stocks.each do |s|%>
 					<tr>
-						<td><%= s.stock_name %></td>
+						<td><a href="/stock/<%= s.id %>"><%= s.stock_name %></a></td>
 						<td><%= s.price %></td>
 						<td><%= s.quantity %></td>
 						<td><%= s.percentage %></td>
 						<td><%= s.years %></td>
-					</tr>
+					</tr>	
 				<% end %>
 			</tbody>
 		</table>

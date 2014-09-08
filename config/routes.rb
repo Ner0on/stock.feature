@@ -2,6 +2,9 @@ Rails.application.routes.draw do
 
 root 'stock#index'
 
+get 'stock/:id' => 'stock#show'
+get 'home' => 'stock#index'
+
 get 'new_stock' => 'new_stock#new'
 post 'new_stock' => 'new_stock#create'
 

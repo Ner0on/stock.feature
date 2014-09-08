@@ -30,6 +30,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'unicorn'
 
 gem 'twitter-bootstrap-rails'
+gem 'rubocop'
 
 group :development do 
 	gem 'sqlite3'
